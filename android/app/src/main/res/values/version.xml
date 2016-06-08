@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gradle要读，慎改 -->
+<resources>
+    <string name="versionName">1.0.0</string>
+    <integer name="versionCode">10000</integer>
+</resources>
