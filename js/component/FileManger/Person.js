@@ -12,12 +12,13 @@ import {
 
 import ImagePicker from 'react-native-image-picker';
 
-export default class FileManger extends Component {
+export default class Person extends Component {
 
     state = {
         avatarSource1: null,
         avatarSource2: null,
-        avatarSource3: null
+        avatarSource3: null,
+        avatarSource4: null
     };
 
     selectPhotoTapped =(type) =>{
@@ -84,6 +85,12 @@ export default class FileManger extends Component {
                         });
                         break;
                     }
+                    case 4:{
+                        this.setState({
+                            avatarSource4: source
+                        });
+                        break;
+                    }
                 }
 
             }
@@ -126,25 +133,33 @@ export default class FileManger extends Component {
         return (
             <View style={styles.container}>
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this, 1)}>
-                    <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}]}>
-                        { this.state.avatarSource1 === null ? <Text>Select a Photo</Text> :
-                            <Image style={styles.avatar} source={this.state.avatarSource1} />
+                    <View style={[styles.head, styles.avatarContainer]}>
+                        { this.state.avatarSource1 === null ? <Text>选择头像</Text> :
+                            <Image style={styles.head} source={this.state.avatarSource1} />
                         }
                     </View>
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this, 2)}>
-                    <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}]}>
-                        { this.state.avatarSource2 === null ? <Text>Select a Photo</Text> :
-                            <Image style={styles.avatar} source={this.state.avatarSource2} />
+                    <View style={[styles.body, styles.avatarContainer]}>
+                        { this.state.avatarSource2 === null ? <Text>选择上衣</Text> :
+                            <Image style={styles.body} source={this.state.avatarSource2} />
                         }
                     </View>
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this, 3)}>
-                    <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}]}>
-                        { this.state.avatarSource3 === null ? <Text>Select a Photo</Text> :
-                            <Image style={styles.avatar} source={this.state.avatarSource3} />
+                    <View style={[styles.leg, styles.avatarContainer]}>
+                        { this.state.avatarSource3 === null ? <Text>选择裤子</Text> :
+                            <Image style={styles.leg} source={this.state.avatarSource3} />
+                        }
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={this.selectPhotoTapped.bind(this, 4)}>
+                    <View style={[styles.foot, styles.avatarContainer]}>
+                        { this.state.avatarSource4 === null ? <Text>选择鞋</Text> :
+                            <Image style={styles.foot} source={this.state.avatarSource4} />
                         }
                     </View>
                 </TouchableOpacity>
@@ -168,9 +183,24 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    avatar: {
+    head: {
+        borderRadius: 75,
+        width: 80,
+        height: 80
+    },
+    body: {
+        //borderRadius: 75,
+        width: 250,
+        height: 150
+    },
+    leg: {
         //borderRadius: 75,
         width: 150,
-        height: 150
-    }
+        height: 250
+    },
+    foot: {
+        //borderRadius: 75,
+        width: 60,
+        height: 80
+    },
 });

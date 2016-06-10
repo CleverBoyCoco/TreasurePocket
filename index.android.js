@@ -10,7 +10,7 @@ import {
   View
 } from 'react-native';
 import TabBar from './js/component/tabBar/TabBar';
-import FileManger from './js/component/FileManger/FileManger';
+import Person from './js/component/FileManger/Person';
 
 class treasurePocket extends Component {
   render() {
@@ -26,7 +26,7 @@ class treasurePocket extends Component {
                     }}
                   title='首页'>
                   <View style={styles.text}>
-                      <FileManger></FileManger>
+                      <Person></Person>
                   </View>
               </TabBar.Item>
 
@@ -34,8 +34,11 @@ class treasurePocket extends Component {
                   icon={require('./js/image/start_normal.png')}
                   selectedIcon={require('./js/image/start_hightlight.png')}
                   title='百'>
-                  <View style={styles.text}>
-                      <Text style={{fontSize: 18}}>Location</Text>
+                  <View>
+                      <Image
+                          style={styles.icon}
+                          source={require('./js/image/tmp1.jpg')}
+                          />
                   </View>
               </TabBar.Item>
 
@@ -43,8 +46,11 @@ class treasurePocket extends Component {
                   icon={require('./js/image/start_normal.png')}
                   selectedIcon={require('./js/image/start_hightlight.png')}
                   title='宝'>
-                  <View style={styles.text}>
-                      <Text style={{fontSize: 18}}>Find</Text>
+                  <View>
+                      <Image
+                          style={styles.icon}
+                          source={require('./js/image/tmp2.jpg')}
+                          />
                   </View>
               </TabBar.Item>
 
@@ -52,8 +58,11 @@ class treasurePocket extends Component {
                   icon={require('./js/image/start_normal.png')}
                   selectedIcon={require('./js/image/start_hightlight.png')}
                   title='袋'>
-                  <View style={styles.text}>
-                      <Text style={{fontSize: 18}}>Me</Text>
+                  <View>
+                      <Image
+                          style={styles.icon}
+                          source={require('./js/image/tmp3.jpg')}
+                          />
                   </View>
               </TabBar.Item>
           </TabBar>
