@@ -10,7 +10,7 @@ import {
   View
 } from 'react-native';
 import TabBar from './js/component/tabBar/TabBar';
-import Person from './js/component/FileManger/Person';
+import Person from './js/component/person/Person';
 
 class treasurePocket extends Component {
   render() {
