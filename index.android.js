@@ -10,6 +10,7 @@ import {
   View
 } from 'react-native';
 import TabBar from './js/component/tabBar/TabBar';
+import FileManger from './js/component/FileManger/FileManger';
 
 class treasurePocket extends Component {
   render() {
@@ -25,7 +26,7 @@ class treasurePocket extends Component {
                     }}
                   title='首页'>
                   <View style={styles.text}>
-                      <Text style={{fontSize: 18}}>Home</Text>
+                      <FileManger></FileManger>
                   </View>
               </TabBar.Item>
 
