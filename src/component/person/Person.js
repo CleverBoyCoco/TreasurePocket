@@ -35,9 +35,9 @@ export default class Person extends Component {
             maxHeight: 300,// photos only
             allowsEditing: true,// Built in functionality to resize/reposition the image after selection
             noData: false, // photos only - disables the base64 `data` field from being generated (greatly improves performance on large photos)
-            storageOptions: {// if this key is provided, the image will get saved in the documents directory on ios, and the pictures directory on android (rather than a temporary directory)
-                skipBackup: true
-            },
+            //storageOptions: {// if this key is provided, the image will get saved in the documents directory on ios, and the pictures directory on android (rather than a temporary directory)
+            //    skipBackup: true
+            //},
             allowsEditing: true
         };
 

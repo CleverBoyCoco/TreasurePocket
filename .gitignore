@@ -28,13 +28,14 @@ project.xcworkspace
 android/.idea
 android/.gradle
 android/app/build
+android/app/*.iml
 android/build
 android/gradle
 android/*.iml
 .gradle
 local.properties
 
-# node.js
+# node.src
 #
 node_modules/
 npm-debug.log

@@ -19,10 +19,33 @@
     "url": "https://github.com/CleverBoyCoco/TreasurePocket.git"
   },
   "dependencies": {
+    "babel-polyfill": "^6.3.14",
     "react": "^15.1.0",
     "react-native": "0.27.1",
     "react-native-image-picker": "^0.19.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel": "^6.3.26",
+    "babel-core": "^6.6.4",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-lodash": "^1.1.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "cross-env": "^1.0.7",
+    "css-loader": "latest",
+    "ejs-loader": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "file-loader": "latest",
+    "react-hot-loader": "^1.3.0",
+    "react-native-webpack-server": "^0.9.3",
+    "react-transform-hmr": "^1.0.1",
+    "style-loader": "latest",
+    "url-loader": "^0.5.5",
+    "webpack": "~1.12.2",
+    "webpack-dev-server": "^1.14.1"
   }
 }

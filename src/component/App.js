@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import {
     AppRegistry,
@@ -8,59 +9,59 @@ import {
     Dimensions,
     View
 } from 'react-native';
-import TabBar from './src/component/tabBar/TabBar';
-import Person from './src/component/person/Person';
+import TabBar from './tabBar/TabBar';
+import Person from './person/Person';
 
-class treasurePocket extends Component {
+export default class App  extends Component {
     render() {
 
         return (
             <View style={styles.container}>
                 <TabBar style={styles.content}>
                     <TabBar.Item
-                        icon={require('./src/image/start_normal.png')}
-                        selectedIcon={require('./src/image/start_hightlight.png')}
+                        icon={require('./../image/start_normal.png')}
+                        selectedIcon={require('./../image/start_hightlight.png')}
                         onPress={() => {
                         console.log("first onPress");
                     }}
-                        title='é¦–é¡µ'>
+                        title='Ê×Ò³'>
                         <View style={styles.text}>
                             <Person></Person>
                         </View>
                     </TabBar.Item>
 
                     <TabBar.Item
-                        icon={require('./src/image/start_normal.png')}
-                        selectedIcon={require('./src/image/start_hightlight.png')}
-                        title='ç™¾'>
+                        icon={require('./../image/start_normal.png')}
+                        selectedIcon={require('./../image/start_hightlight.png')}
+                        title='°Ù'>
                         <View>
                             <Image
                                 style={styles.icon}
-                                source={require('./src/image/tmp1.jpg')}
+                                source={require('./../image/tmp1.jpg')}
                                 />
                         </View>
                     </TabBar.Item>
 
                     <TabBar.Item
-                        icon={require('./src/image/start_normal.png')}
-                        selectedIcon={require('./src/image/start_hightlight.png')}
-                        title='å®'>
+                        icon={require('./../image/start_normal.png')}
+                        selectedIcon={require('./../image/start_hightlight.png')}
+                        title='±¦'>
                         <View>
                             <Image
                                 style={styles.icon}
-                                source={require('./src/image/tmp2.jpg')}
+                                source={require('./../image/tmp2.jpg')}
                                 />
                         </View>
                     </TabBar.Item>
 
                     <TabBar.Item
-                        icon={require('./src/image/start_normal.png')}
-                        selectedIcon={require('./src/image/start_hightlight.png')}
-                        title='è¢‹'>
+                        icon={require('./../image/start_normal.png')}
+                        selectedIcon={require('./../image/start_hightlight.png')}
+                        title='´ü'>
                         <View>
                             <Image
                                 style={styles.icon}
-                                source={require('./src/image/tmp3.jpg')}
+                                source={require('./../image/tmp3.jpg')}
                                 />
                         </View>
                     </TabBar.Item>
@@ -91,4 +92,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('treasurePocket', () => treasurePocket);
+//AppRegistry.registerComponent('treasurePocket', () => treasurePocket);
